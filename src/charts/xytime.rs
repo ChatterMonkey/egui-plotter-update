@@ -423,7 +423,7 @@ impl XyTimeData {
 
     /// Draw the chart to a Ui. Will also proceed to animate the chart if playback is currently
     /// enabled.
-    pub fn draw(&mut self, ui: &Ui) {
+    pub fn draw(&mut self, ui: &mut Ui) {
         if let Some(_) = self.playback_start {
             let time = self.current_time();
 
