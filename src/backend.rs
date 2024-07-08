@@ -186,7 +186,7 @@ pub struct EguiBackend<'a> {
 impl<'a> EguiBackend<'a> {
     #[inline]
     /// Create a backend given a reference to a Ui.
-    pub fn new(ui: &'a Ui) -> Self {
+    pub fn new(ui: &mut Ui) -> Self {
         Self {
             ui,
             x: 0,
