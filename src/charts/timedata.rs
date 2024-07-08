@@ -178,7 +178,7 @@ impl TimeData {
 
     /// Draw the chart to a Ui. Will also proceed to animate the chart if playback is currently
     /// enabled.
-    pub fn draw(&mut self, ui: &Ui) {
+    pub fn draw<'a>(&mut self, ui: &'a mut Ui) {
         self.chart.draw(ui)
     }
 
